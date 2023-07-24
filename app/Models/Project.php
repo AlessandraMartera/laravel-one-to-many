@@ -17,4 +17,10 @@ class Project extends Model
         "completed"
         ];
 
+    public function type(){
+
+            return $this->hasOne(Type::class);
+        }
+
+
 }
