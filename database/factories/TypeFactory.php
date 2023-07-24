@@ -17,8 +17,8 @@ class TypeFactory extends Factory
     public function definition()
     {
         return [
-        'language' => fake() ->
-        randomElement(['JavaScript', 'C++', 'PHP', 'Python', 'Ruby']),
+        // 'language' => fake() ->
+        // randomElement(['JavaScript', 'C++', 'PHP', 'Python', 'Ruby']),
         ];
     }
 }

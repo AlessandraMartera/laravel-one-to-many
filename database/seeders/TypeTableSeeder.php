@@ -16,6 +16,14 @@ class TypeTableSeeder extends Seeder
      */
     public function run()
     {
-        Type::factory()->count(10)->create();
+        // Type::factory()->count(10)->create();
+        $types = ['JavaScript', 'C++', 'PHP', 'Python', 'Ruby'];
+
+        foreach ($types as $type) {
+
+            Type::create([
+                "language" => $type
+            ]);
+        }
     }
 }

@@ -21,7 +21,8 @@ class ProjectFactory extends Factory
             'agency' => fake() -> company(),
             'decription' => fake() -> text(300),
             'publish_date' => fake() -> dateTimeThisDecade(),
-            'completed' => fake() -> boolean()
+            'completed' => fake() -> boolean(),
+            'type_id' => 1
         ];
     }
 }
