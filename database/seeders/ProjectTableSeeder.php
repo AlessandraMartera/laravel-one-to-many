@@ -20,11 +20,11 @@ class ProjectTableSeeder extends Seeder
 
         $projects = Project::factory()->count(10)->make();
 
-        // foreach($projects as $project){
-        //     $type = Type::randomOrder()->first();
-        //     $project->type_id = $type->id;
-        //     $project->save();
-        // }
+        foreach($projects as $project){
+            $type = Type::inRandomOrder()->first();
+            $project->type_id = $type->id;
+            $project->save();
+        }
 
         // foreach ($posts as $post) {
 
